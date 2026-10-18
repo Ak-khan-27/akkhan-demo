@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+           min-width: 100%;
+           min-height: 100%;
+           border: 2px solid black;
+           display: flex;
+           align-items: flex-start;
+           flex-wrap: wrap;
+           position: fixed;
+           top: 0px;
+           z-index: 1;
+        }
+        .container1{
+            background-image: url(portal2.png);
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            width: 20%;
+            margin: 0;
+            padding: 20px;
+            padding-top: 120px;
+        }
+        .container2{
+            background-color:beige;
+            height: 100vh;
+            width: 80%;
+            margin: 0;
+            margin-top: 0px;
+            overflow: scroll;
+        
+    
+        }
+        .a{
+            color: White;
+            text-decoration: none;
+            font-size: 1.5rem; 
+            
+        }
+        .a:hover{
+            color: yellow;
+            text-decoration: underline;
+        }
+        a:focus{
+            border: 2px solid yellow;
+        }
+        .container3{
+            width: 100%;
+            background-color: white;
+            height: 50px;
+            border: none;
+            display: inline-flex;
+            justify-content: flex-end;
+            box-shadow: 2px 2px 2px rgb(41, 36, 36);
+            
+            
+        }
+        
+        .container4{
+            width: 40px;
+            height: 40px;
+            border: 2px solid black;
+            border-radius: 100%;
+            margin-top: 4px;
+            background-image: url(akkhan.jpg);
+            background-size: contain;
+            background-position: center;
+        }
+        .container5{
+            padding: 25px;
+        }
+        .container6{
+            display: inline-flex;
+            flex-wrap: wrap;  
+            justify-content:space-between;
+            gap: 50px;
+
+        }
+        .container7{
+            background-color: white;
+            width: 150px;
+            height: 80px;
+            margin: 5px;
+            border-radius: 15px;
+            box-shadow: 2px 2px 2px rgb(41, 36, 36);
+            display: inline-flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-wrap: wrap;
+            
+
+        }
+        #image{
+            font-size: 3em;
+            align-items: center;
+            box-shadow: 2px  blue;
+            display: flex;
+        }
+        .container8{
+            display: inline-flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .container9{
+            width: 100vh;
+            height: 75px;
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 2px 2px 2px rgb(41, 36, 36);
+            display: inline-flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px;
+            
+            
+        }
+        .button{
+            width: 80px;
+            height: 35px;
+            border-radius: 15px;
+            background-color: rgb(16, 247, 16);
+            margin-right: 5px;
+        
+
+        }
+        .button:hover{
+            transform: scale(1.05);
+            cursor: pointer;
+        }
+        
+    </style>
+</head>
+<body>
+    
+<div class="container">
+        <div class="container1" id="fix">
+            <a href="dashboard.html" class="a">🏠︎ Dashboard</a><br><br>
+            <a href="profile.html" class="a">👤 Profile</a><br><br>
+            <a href="subject.html" class="a">📖 Subjects</a><br><br>
+            <a href="timetable.html" class="a">🗓️ Timetable</a><br><br>
+            <a href="marks.html" class="a">📊 Resuilt</a><br><br>
+            <a href="notice.html" class="a">🔔 Notice</a><br><br>
+            <a href="logout.html" class="a">⏻ Logout</a><br><br>
+        </div>
+        <div class="container2" id="fix">
+             <div class="container3">
+                <div id="flex" style="font-size: 2em; margin-right: 20px;"><b>🕭</b></div>
+                <div id="flex" class="container4" style="margin-right: 5px;"></div>
+                <div style="margin-right: 50px;"><h4>Arif Khan</h4></div>
+             </div>
+             <div class="container5">
+             <h2 style="margin: 0;">Welcome back, Arif Khan👋</h2>
+             <p>Here's what's happening with your acadmics today</p>
+             <div class="container6">
+                <div class="container7">
+                    <span id="image" style="margin: 0;">📕</span>
+                    <div style="margin: 0;">
+                        <h4 style="margin: 0;margin-top: 17px;">Subjects</h4><h2 style="margin: 0;">6</h2>
+                    </div>
+                    
+                    
+                </div>
+                <div class="container7">
+                    <span id="image" style="margin: 0;">📋</span>
+                    <div style="margin: 0;">
+                        <h4 style="margin: 0;margin-top: 17px;">Assignment</h4><h2 style="margin: 0;">_</h2>
+                    </div>
+                </div>
+                <div class="container7">
+                    <span id="image" style="margin: 0;">🚀</span>
+                    <div style="margin: 0;">
+                        <h4 style="margin: 0;margin-top: 17px;">Projects</h4><h2 style="margin: 0;">_</h2>
+                    </div>
+                </div>
+                <div class="container7">
+                    <span id="image" style="margin: 0;">📊</span>
+                    <div style="margin: 0;">
+                        <h4 style="margin: 0;margin-top: 17px;">CGPA's
+                            </h4><h2 style="margin: 0;">_</h2>
+                    </div>
+                </div>
+             </div>
+             </div>
+             <div class="container5">
+                  <h1> 🎯 MY GOAL</h1> 
+                  <div class="container8">
+                    <div class="container9"> 
+                        <div><h2>1. First Semester</h2></div>
+                        <div><a href="first1.jpg"><button class="button">File </button></a></div>
+                    </div>
+                    <div class="container9">
+                        <div><h2>2. Second Semester</h2></div>
+                        <div><a href="first2.jpg"><button class="button">File </button></a></div>
+                    </div>
+                    <div class="container9">
+                        <div><h2>3. Third Semester</h2></div>
+                        <div><a href="first3.jpg"><button class="button">File </button></a></div>
+                    </div>
+                    <div class="container9">
+                        <div><h2>4.Foruth Semester</h2></div>
+                        <div><a href="first4.jpg"><button class="button">File </button></a></div>
+                    </div>
+                    <div class="container9">
+                        <div><h2>5. Fifth Semester</h2></div>
+                        <div><a href="first5.jpg"><button class="button">File </button></a></div>
+                    </div>
+                    <div class="container9">
+                        <div><h2>6. Sixth Semester</h2></div>
+                        <div><a href="first6.jpg"><button class="button">File </button></a></div>
+                    </div>
+                    <div class="container9" >
+                        <div><h2>7. Seventh Semester</h2></div>
+                        <div><a href="first7.jpg"><button class="button">File </button></a></div>
+                    </div>
+                    <div class="container9">
+                        <div><h2>8. Eight Semester</h2></div>
+                        <div><a href="first8.jpg"><button class="button">File </button></a></div>
+                    </div>
+                  </div>
+             </div>
+    </div>
+</div>    
+</body>
+</html>
